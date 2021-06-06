@@ -1,0 +1,45 @@
+#div1{
+    background-image: url("../../assets/images/bg2.jpg") !important;
+    height: 100%;
+    position:fixed; 
+    width: 100%;
+    /* padding: 0px !important;
+    margin: 0px !important; */
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-color: black;
+    opacity: 0.95;
+    transition-delay: 9s;
+}
+h1{
+    margin-top: 16%;
+    font-size: 3em;
+    margin-left:100px;
+    font-family: 'Brush Script MT,Brush Script Std,cursive' !important;
+    color: rgb(223, 213, 213);
+    font-style: oblique;
+}
+h2{
+    font-size: 1.5em;
+    margin-left:100px;
+    font-family: 'Brush Script MT,Brush Script Std,cursive' !important;
+    color: rgb(223, 213, 213);
+}
+a{
+    color: rgb(223, 213, 213);
+    text-decoration: none;
+    background-color: black;
+    padding: 8px;
+    margin-left: 20px;
+    opacity: 0.6;
+    border-radius:5px;
+    font-style: oblique;
+}
+#a1{
+    margin-left: 100px !important;
+}
+a:hover{
+    background-color: rgb(255, 255, 255);
+}

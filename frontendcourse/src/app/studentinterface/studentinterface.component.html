@@ -1,0 +1,43 @@
+
+<div align="center">
+<form id='form' (ngSubmit)="Adddata()">
+<h2>STUDENT REGISTRATION FORM</h2><hr><br>
+<h4>PERSONAL DETAILS</h4><br>
+&nbsp;<h3>First name:</h3><input type="text" placeholder="Enter first name" name="firstname" [(ngModel)]="student.firstname">
+&nbsp;<h3>Last name:</h3><input type="text" placeholder="Enter last name" name="lastname" [(ngModel)]="student.lastname"><br><br>
+&nbsp;<h3>Parent/Gaurdian name:</h3><input type="text" placeholder="Enter parent name" name="parentname" [(ngModel)]="student.parentname"><br><br>
+&nbsp;<h3>Email:</h3><input type="email" placeholder="Enter email" name="email" [(ngModel)]="student.email">
+<h3>Gender:</h3><input list="genders"  id="gen" name="genders" [(ngModel)]="student.gender">
+    <datalist id="genders">
+        <option value="Male">
+        <option value="Female">
+        <option value="Other">
+    </datalist><br><br>
+&nbsp;<h3>Mobile number:</h3><input type="text" placeholder="Enter mobile number" name="number1" [(ngModel)]="student.number1"><br><br>
+&nbsp;<h3>Parent number:</h3><input type="text" placeholder="Enter parent number" name="number2" [(ngModel)]="student.number2"><br><br>
+&nbsp;<h3>House name:</h3><input type="text" placeholder="Enter house name" name="housename" [(ngModel)]="student.housename">
+&nbsp;<h3>Street:</h3><input type="text" placeholder="Enter street" name="street" [(ngModel)]="student.street"><br><br>
+&nbsp;<h3>City:</h3><input type="text" placeholder="Enter city" name="city" [(ngModel)]="student.city">
+&nbsp;<h3>District:</h3><input type="text" placeholder="Enter district" name="district" [(ngModel)]="student.district"><br><br>
+&nbsp;<h3>Pin code:</h3><input type="text" placeholder="Enter pin code" name="pincode" [(ngModel)]="student.pincode">
+&nbsp;<h3>State:</h3><input type="text" placeholder="Enter state" name="state" [(ngModel)]="student.state"><br><br>
+&nbsp;<h3>Country:</h3><input type="text" placeholder="Enter country" name="country" [(ngModel)]="student.country"><br><br><hr>
+<h4>EDUCATION DETAILS</h4><br>
+&nbsp;<h3>Qualification</h3>
+<input list="qualification" name="qualification" [(ngModel)]="student.qualification">
+    <datalist id="qualification">
+      <option value="BACHELOR'S">
+      <option value="MASTERS'S">
+      <option value="DIPLOMA">
+      <option value="HIGHER SECONDARY">
+    </datalist><br><br>
+&nbsp;<h3>College/School name:</h3><input type="text" placeholder="Enter college name" name="collegename" [(ngModel)]="student.collegename">
+&nbsp;<h3>City:</h3><input type="text" placeholder="Enter city" name="city2" [(ngModel)]="student.city2"><br><br>
+&nbsp;<h3>University/School Id:</h3><input type="text" placeholder="Enter university id" name="id" [(ngModel)]="student.id"><br><br>
+<hr><h4>DECLARATION</h4>
+<h4>I hereby declare that all the information mentioned above is true and correct to my knowledge.
+</h4><br>
+<button type="submit"><h4>Create</h4></button><br>
+<h5>Already have a account</h5><a routerLink="loginstudent">click here</a><br><br>
+</form>
+</div> 
