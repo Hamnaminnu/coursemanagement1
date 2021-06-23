@@ -1,0 +1,50 @@
+<!-- <br><br><br>
+<div class="div2"><a href="courselist">COURSE LIST</a><a href="myapplication"> MY APPLICATION</a>
+<a href="#" >LOG-OUT</a></div>
+<div class="div" >
+    <i class='fas fa-user-circle' style='font-size:100px'></i><br><br>
+    <h1>{{professor.firstname}} {{professor.lastname}}</h1><br>
+    <h2>Email: {{professor.email}}</h2>
+    <h2>Contact number: {{professor.number1}}</h2>
+    <h2>Gender: {{professor.gender}}</h2>
+    <h2>Contact address: {{professor.housename}} </h2>
+    <h2>{{professor.street}} , {{professor.city}}</h2>
+    <h2>{{professor.district}} , {{professor.state}}</h2>
+    <h2>{{professor.country}} , {{professor.pincode}}</h2>
+    <h2>Education Qualification: {{professor.qualification}}</h2>
+   <h2>Aadhar card number: {{professor.aadhar}}</h2> 
+    <h2>Course name: {{professor.coursename}}</h2>
+    <h2>Description: {{professor.description}}</h2>
+    <h2>Duration: {{professor.duration}}</h2>
+</div> -->
+
+<div id="main">  
+    <div id="header"><i class='fas fa-user-circle' style='font-size:50px; padding: 25px;'></i>{{professor.firstname}} {{professor.lastname}}
+    <a href="#" >LOG-OUT</a>
+    <a href="studentlist"> ALL STUDENTS</a>
+    <a routerLink="studentreq">STUDENT REQUESTS</a>
+    <a routerLink="mystudents"> MY STUDENTS</a>
+    </div></div>
+  <div id="profile">
+    <div class="row">
+        <div class="column1" style="background-color:rgb(167, 165, 165);">
+        </div>
+        <div class="column2">
+            <h1>PROFILE</h1><br>
+            <h2>Name: {{professor.firstname}} {{professor.lastname}}</h2>
+            <h2>Email: {{professor.email}}</h2>
+            <h2>Contact number: {{professor.number1}}</h2>
+            <h2>Gender: {{professor.gender}}</h2>
+            <h2>Contact address: {{professor.housename}} </h2>
+            <h2>{{professor.street}} , {{professor.city}}</h2>
+            <h2>{{professor.district}} , {{professor.state}}</h2>
+            <h2>{{professor.country}} , {{professor.pincode}}</h2>
+            <h2>Education Qualification: {{professor.qualification}}</h2>
+           <h2>Aadhar card number: {{professor.aadhar}}</h2> 
+            <h2>Course name: {{professor.coursename}}</h2>
+            <h2>Description: {{professor.description}}</h2>
+            <h2>Duration: {{professor.duration}}</h2>
+        </div>
+      </div>
+</div>
+

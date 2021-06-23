@@ -1,0 +1,119 @@
+h1{
+    font-size: 2em;
+    font-family: 'Brush Script MT',' Brush Script Std',' cursive' !important; 
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+h2{
+    font-family: 'Brush Script MT, Brush Script Std,cursive' !important;
+    font-size: 1.5em;
+    color: rgb(65, 65, 65);
+}
+#main{
+    width: 100%;
+    background-color: rgb(167, 165, 165);
+    font-family: 'Brush Script MT, Brush Script Std,cursive' !important;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.a{
+    text-decoration: none;
+    float: right;
+    font-family: 'Brush Script MT, Brush Script Std,cursive' !important;
+    font-size: 1em;
+    margin: 25px;
+    color: rgb(255, 255, 255);
+}
+.column1 {
+    float: left;
+    width: 18%;
+    padding: 10px;
+    /* height: 300px;  */
+  }
+  .column2 {
+    float: left;
+    width: 80%;
+    /* padding: 10px; */
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    /* height: 300px;  */
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100%;
+  }
+  .a:hover{
+      color: black;
+  }
+  .column3 {
+    float: left;
+    width: 45%;
+    /* padding: 10px; */
+    text-align: left;
+    margin: 2%;
+    padding: 5%;
+    height: 100%;
+    border: dotted;
+    border-color: #000; 
+    /* height: 300px;  */
+  }
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100%;
+  }
+  button:disabled{
+    text-align: center;
+    background-color: rgb(66, 47, 23);
+}
+button{
+    background-color: rgb(233, 195, 195);
+    text-decoration: none;
+    border: none;
+    padding-top: 4px;
+    
+}
+h3{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;
+    font-family:'Brush Script MT,Brush Script Std,cursive';
+    color: rgb(65, 65, 65);
+}
+input[type=password]{
+    float: left;
+    border: none;
+    color: rgb(65, 65, 65);
+    width: 200px;  
+    padding: 3px; 
+    margin-left: 10px;
+}
+input[type=email],input{
+
+    border: none;
+    color: rgb(65, 65, 65);
+    width: 300px;  
+    padding: 3px;  
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#form{
+    position: relative;
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(0, 0, 0);
+    width: 50%;
+    padding: 20px;
+    margin:10% ;
+    margin-left: 20%;
+}
+h4{
+    font-family: 'Brush Script MT, Brush Script Std,cursive' !important;
+    font-size: 1.5em;
+    padding: 3px;
+}

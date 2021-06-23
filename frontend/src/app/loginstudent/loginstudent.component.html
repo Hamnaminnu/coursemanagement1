@@ -1,0 +1,11 @@
+<div align="center">
+    <form id="form" (ngSubmit)="check()" #userregister='ngForm'>
+        <h2>LOGIN HERE</h2><br>
+        <h3>Username:</h3><input type="email" #email=ngModel required [class.is-invalid]='email.invalid && email.touched' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter registered email" name="email" [(ngModel)]="ustudent.uname"><br><br>
+        <small class="text-danger" [class.d-none]="email.valid || email.touched"></small>
+        <h3>Password:</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" required  #password=ngModel  placeholder="Enter mobile number"  [class.is-invalid]='password.invalid && password.touched'  minlength="10" maxlength="10" pattern="[0-9]+" name="password" [(ngModel)]="ustudent.password"><br><br>
+        <small class="text-danger" [class.d-none]="password.valid || password.touched"></small>
+        <button type="submit" [disabled]='userregister.form.invalid'><h4>Ok</h4></button><br><br>
+    </form>
+</div>
+

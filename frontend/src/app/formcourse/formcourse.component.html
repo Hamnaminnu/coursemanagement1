@@ -1,0 +1,24 @@
+<div id="main">  
+    <div id="header" style="color:rgb(167, 165, 165) ;"><i class='fas fa-user-circle' style='font-size:50px; color:rgb(167, 165, 165); padding: 25px;'></i>COURSE REGISTRATION FORM
+    <a class="a" href="#" >LOG-OUT</a>
+    <a  class="a" href="myapplication"> NOTIFICATIONS</a>
+    <a  class="a" href="courselist">COURSE LIST</a>
+    </div></div>
+  <div id="profile">
+    <div class="row">
+        <div class="column1" style="background-color:rgb(167, 165, 165);">
+        </div>
+        <div class="column2">
+            <form id="form" (ngSubmit)="formdata()" #userregister='ngForm'>
+                <h2 style="text-align: center;">FILL THIS</h2><br>
+                <h3>Student Email: <input type="email" required placeholder="Enter your email" name="semail" [(ngModel)]="form.semail"></h3><br><br>
+                <h3>Course Name:<input type="text" required  placeholder="Enter course name" name="course" [(ngModel)]="form.course"></h3><br><br>
+                <h3>Professor Email:<input type="email" required  placeholder="Enter professor email" name="pemail" [(ngModel)]="form.pemail"></h3><br><br>
+                <br><button type="submit" style="margin-left: 45%; color: white;" [disabled]='userregister.form.invalid'><h4>APPLY</h4></button><br><br>
+            </form>
+            
+        </div>
+      </div>
+</div>
+
+

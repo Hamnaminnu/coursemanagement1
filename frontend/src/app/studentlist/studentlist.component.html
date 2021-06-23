@@ -1,0 +1,27 @@
+<div id="main">  
+    <div id="header"><i class='fas fa-user-circle' style='font-size:50px; color:rgb(167, 165, 165); padding: 25px;'></i>{{studentdata.firstname}} {{studentdata.lastname}}
+        <a class="a"  href="#" >LOG-OUT</a>
+        <a class="a" href="studentlist"> ALL STUDENTS</a>
+        <a  class="a" href="studentreq">STUDENT REQUESTS</a>
+        <a  class="a" href="mystudents"> MY STUDENTS</a>
+    </div></div>
+  <div id="profile">
+    <div class="row">
+        <div class="column1" style="background-color:rgb(167, 165, 165);">
+        </div>
+        <div class="column2">
+            <h1>ALL STUDENTS</h1><br>
+            <div class="row1">
+            <div *ngFor='let studentdata of studentdata' class="column3">
+            <h2 style="font-size: 3em;
+            font-family: 'Brush Script MT',' Brush Script Std',' cursive' !important; 
+            color: rgb(65, 65, 65);">Student Name: {{studentdata.firstname}} {{studentdata.lastname}}</h2>
+            <h2>Student Email: {{studentdata.email}}</h2>
+            <h2>Contact number: {{studentdata.number1}}</h2>
+            <h2>Higher Qualification: {{studentdata.qualification}}</h2>
+            <h2>College/University name: {{studentdata.collegename}}</h2> 
+            <h2>University id: {{studentdata.id}}</h2>
+            </div></div>       
+        </div>
+      </div>
+</div>

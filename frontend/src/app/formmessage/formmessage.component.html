@@ -1,0 +1,24 @@
+<div id="main">  
+    <div id="header" style="color:rgb(167, 165, 165) ;"><i class='fas fa-user-circle' style='font-size:50px; color:rgb(167, 165, 165); padding: 25px;'></i>MESSAGE FORM
+    <a class="a" href="#" >LOG-OUT</a>
+    <a  class="a" href="studentlist"> ALL STUDENTS</a>
+    <a class="a"  href="studentreq">STUDENT REQUESTS</a>
+    <a  class="a" href="mystudents"> MY STUDENTS</a>
+    </div></div>
+  <div id="profile">
+    <div class="row">
+        <div class="column1" style="background-color:rgb(167, 165, 165);">
+        </div>
+        <div class="column2">
+            <form id="form" (ngSubmit)="formdata()" #userregister='ngForm'>
+                <h2 style="text-align: center;">FILL THIS</h2><br>
+                <h3>Student Name: <input type="text" required placeholder="Enter yout name" name="name" [(ngModel)]="form.name"></h3><br><br>
+                <h3>Message:<input type="text" required  placeholder="Enter message" name="msg" [(ngModel)]="form.msg"></h3><br><br>
+                <h3>Professor Name:<input type="text" required  placeholder="Enter professor name" name="proname" [(ngModel)]="form.proname"></h3><br><br>
+                <br><button type="submit" style="margin-left: 45%; color: white;" [disabled]='userregister.form.invalid'><h4>SEND</h4></button><br><br>
+            </form>
+            
+        </div>
+      </div>
+</div>
+

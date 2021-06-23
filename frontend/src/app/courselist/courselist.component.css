@@ -1,0 +1,68 @@
+h1{
+    font-size: 2em;
+    font-family: 'Brush Script MT',' Brush Script Std',' cursive' !important; 
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+h2{
+    font-family: 'Brush Script MT, Brush Script Std,cursive' !important;
+    font-size: 1.5em;
+    color: rgb(65, 65, 65);
+}
+#main{
+    width: 100%;
+    background-color: rgb(167, 165, 165);
+    font-family: 'Brush Script MT, Brush Script Std,cursive' !important;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+.a{
+    text-decoration: none;
+    float: right;
+    font-family: 'Brush Script MT, Brush Script Std,cursive' !important;
+    font-size: 1em;
+    margin: 25px;
+    color: rgb(255, 255, 255);
+}
+.column1 {
+    float: left;
+    width: 18%;
+    padding: 10px;
+    /* height: 300px;  */
+  }
+  .column2 {
+    float: left;
+    width: 80%;
+    /* padding: 10px; */
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    /* height: 300px;  */
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100%;
+  }
+  .a:hover{
+      color: black;
+  }
+  .column3 {
+    float: left;
+    width: 45%;
+    /* padding: 10px; */
+    text-align: left;
+    margin: 2%;
+    padding: 5%;
+    height: 100%;
+    border: dotted;
+    border-color: #000; 
+    /* height: 300px;  */
+  }
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100%;
+  }

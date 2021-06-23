@@ -1,0 +1,28 @@
+<div id="main">  
+    <div id="header"><i class='fas fa-user-circle' style='font-size:50px; color:rgb(167, 165, 165); padding: 25px;'></i>{{coursedata.firstname}} {{coursedata.lastname}}
+    <a class="a" href="#" >LOG-OUT</a>
+    <a  class="a" href="myapplication"> NOTIFICATIONS</a>
+    <a  class="a" href="courselist">COURSE LIST</a>
+    </div></div>
+  <div id="profile">
+    <div class="row">
+        <div class="column1" style="background-color:rgb(167, 165, 165);">
+        </div>
+        <div class="column2">
+            <h1>AVAILABLE COURSES</h1><br>
+            <div class="row1">
+            <div *ngFor='let coursedata of coursedata' class="column3">
+            <h2 style="font-size: 3em;
+            font-family: 'Brush Script MT',' Brush Script Std',' cursive' !important; 
+            color: rgb(65, 65, 65);">  Course name: <br>{{coursedata.coursename}}</h2>
+            <h2>Description: {{coursedata.description}}</h2>
+            <h2>Duration: {{coursedata.duration}}</h2>
+            <h2>Professor Name: {{coursedata.firstname}} {{coursedata.lastname}}</h2>
+            <h2>Professor Email: {{coursedata.email}}</h2>
+            <h2>Professor Number: {{coursedata.number1}}</h2><br>
+            <a href="courseform" style="padding:5px; background-color:rgb(167, 165, 165); text-decoration: none; color: white;">
+            APPLY</a></div></div>
+            
+        </div>
+      </div>
+</div>
